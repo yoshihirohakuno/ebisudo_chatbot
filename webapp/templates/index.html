@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ chatbot_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body class="page">
+    <main class="chat-shell">
+      <section class="chat-card">
+        <header class="chat-header">
+          <p class="eyebrow">FAQ Chat Bot</p>
+          <h1>{{ chatbot_title }}</h1>
+          <p class="lead">えびす堂の公開サイト情報をもとに、質問へ日本語で回答します。</p>
+        </header>
+
+        <div id="messages" class="messages">
+          <article class="message bot">
+            <p>こんにちは。えびす堂のサイトに書かれている範囲でお答えします。知りたいことを入力してください。</p>
+          </article>
+        </div>
+
+        <form id="chat-form" class="chat-form">
+          <label for="message" class="sr-only">質問</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="例: えびす堂ではどのような事業をしていますか？"
+            required
+          ></textarea>
+          <button type="submit">送信</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+  </body>
+</html>
+
