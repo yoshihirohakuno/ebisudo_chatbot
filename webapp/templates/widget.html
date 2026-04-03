@@ -9,24 +9,24 @@
   <body class="widget-page">
     <main class="chat-card widget-card">
       <header class="chat-header compact">
-        <p class="eyebrow">FAQ Chat Bot</p>
-        <h1>{{ chatbot_title }}</h1>
+        <p class="eyebrow">EbisudoFAQ Chat Bot</p>
       </header>
 
       <div id="messages" class="messages widget-messages">
         <article class="message bot">
-          <p>えびす堂サイトの公開情報から回答します。気軽に質問してください。</p>
+          <p>こんにちは。えびす堂について知りたいことを入力してください。</p>
         </article>
       </div>
 
       <form id="chat-form" class="chat-form widget-form">
         <label for="message" class="sr-only">質問</label>
         <textarea id="message" name="message" rows="2" placeholder="質問を入力" required></textarea>
-        <button type="submit">送信</button>
+        <button type="submit" class="send-button" aria-label="送信">
+          <span aria-hidden="true">↑</span>
+        </button>
       </form>
     </main>
 
     <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
   </body>
 </html>
-

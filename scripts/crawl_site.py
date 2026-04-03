@@ -84,6 +84,75 @@ def clean_text(html: str) -> tuple[str, str]:
     return title, text
 
 
+def build_public_anchor_map(soup: BeautifulSoup) -> dict[str, str]:
+    anchor_map: dict[str, str] = {}
+
+    for nav_link in soup.select(".nav.original-nav a[href^='#_']"):
+        href = nav_link.get("href", "").strip()
+        text = nav_link.get_text(" ", strip=True)
+        if href:
+            anchor_map[href] = text
+
+    return anchor_map
+
+
+def build_section_records(html: str, page_url: str, page_title: str) -> list[dict[str, str]]:
+    soup = BeautifulSoup(html, "html.parser")
+
+    for tag in soup(["script", "style", "noscript", "svg"]):
+        tag.decompose()
+
+    section_records: list[dict[str, str]] = []
+    seen_keys: set[tuple[str, str]] = set()
+    public_anchor_map = build_public_anchor_map(soup)
+
+    candidates = soup.select("li.slide[id], section[id], div[id^='section-']")
+
+    for index, element in enumerate(candidates, start=1):
+        section_id = element.get("id", "").strip()
+        heading = element.find(["h1", "h2", "h3", "h4"])
+        section_title = heading.get_text(" ", strip=True) if heading else ""
+        section_text = element.get_text("\n", strip=True)
+        section_text = re.sub(r"\n{2,}", "\n", section_text)
+        section_text = re.sub(r"[ \t]{2,}", " ", section_text).strip()
+        public_anchor = f"#_{index}"
+        nav_title = public_anchor_map.get(public_anchor, "")
+
+        if not section_text and not section_title and not nav_title:
+            continue
+        if section_title in {"Cookie Policy", "地図"}:
+            continue
+
+        canonical_title = section_title or nav_title
+        if nav_title and nav_title not in section_text:
+            section_text = f"{nav_title}\n{section_text}".strip()
+        if canonical_title and canonical_title not in section_text:
+            section_text = f"{canonical_title}\n{section_text}".strip()
+
+        if not section_text and canonical_title:
+            section_text = canonical_title
+
+        if len(section_text) < 18 and not canonical_title:
+            continue
+
+        public_url = f"{page_url}{public_anchor}"
+        record_title = f"{page_title} | {canonical_title}" if canonical_title else page_title
+        key = (record_title, section_text[:160])
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+
+        section_records.append(
+            {
+                "title": record_title,
+                "url": public_url,
+                "content": section_text,
+            }
+        )
+
+    return section_records
+
+
 def extract_links(html: str, current_url: str, base_netloc: str) -> list[str]:
     soup = BeautifulSoup(html, "html.parser")
     links: list[str] = []
@@ -133,6 +202,9 @@ def crawl(base_url: str, max_pages: int, delay: float) -> list[dict[str, str]]:
         if text:
             pages.append({"title": title, "url": url, "content": text})
             print(f"saved: {url}")
+            for section_record in build_section_records(response.text, url, title):
+                pages.append(section_record)
+                print(f"saved section: {section_record['url']}")
 
         for link in extract_links(response.text, url, base_netloc):
             if link not in visited:

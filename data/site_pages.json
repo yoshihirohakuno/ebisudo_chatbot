@@ -1,0 +1,86 @@
+{
+  "base_url": "https://www.ebisudo.co.jp/",
+  "page_count": 16,
+  "pages": [
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」",
+      "url": "https://www.ebisudo.co.jp/",
+      "content": "可変印刷と\nデータ処理\nゑびす堂は可変印刷のプロとして、機械系運用技術の開発に加えて、乱数生成やチェック処理等の情報処理技術に日々取り組んでいます。ビッグデータ時代の個別マーケティングに、弊社のノウハウがお役に立ちます。\n弊社の特徴\nナンバリング専業から\n弊社は製本業から昭和\n30\n年に改組してナンバリング専業という珍しい業態の会社としてスタートしています。爾来、ナンバリングは元よりバリアブル印字に至る特化したニーズに応えるサービスを開発・提供し続け今日に至っています。\n現在は、インクジェットによる最大サイズ\nA\n全までへのデータ印字主体となっていますが、創業以来携わるナンバリングにより培われた「\n１\n枚\n１\n枚を管理する」という社風、文化がバリアブル印字にも脈々と受け継がれ、高い品質を維持する原動力になっています。また、ナンバリング及びバリアブル印字が含まれた多くの製品を仕上げた実績から、コンサルティング力を備え「先ずはゑびす堂に聞いてみよう」という評価を頂戴しています。\nソフトウェアの開発力\n弊社では、様々なニーズに応える為に、それまでに市場になかった製造方法、ソフトウエア技術の確立にも積極果敢に取組み、数多くの成果をあげてきました。今では当たり前になった手法、「オフセット印刷機＋ナンバリング」「ビジネスフォーム＋電子ナンバリングによるチェックデジット印字」などの機材の国内\n１\n号機は、弊社にてスタートを切っています。現在の主体のインクジェットによる印字もまだ国内での実績が皆無だった時代からリスクをとりながら取り組み、インクジェットによるデータ印字サービスの流れに深く関わって参りました。\nこうしたカスタマイズしたハードウエアの開発と共に、データ処理の生産性向上、多様性にも尽力して参りました。主に、\nAWK\n、\nPython\n、\nRuby\nなどの汎用言語をベースにバッチ処理を駆使し構築したリーズナブルで迅速な環境は、短納期のオーダー、小ロット多品種といった従来は生産性が上がらなかった製品（店舗数が数百あり、店舗ごとの必要数がバラバラで合計数が\n100\n万枚というような製品）にも柔軟に対処でき、ご好評を頂いております。\n様々な要素技術を常にウオッチし、ナンバリングやバリアブル印字に常に最善のソリューションの提供に努め皆様からのご相談をお待ちしております。\nお問い合わせ\n〒116-0001\n東京都荒川区町屋8-22-10 有限会社 ゑびす堂\n電話：050-5212-8111\nファックス：03-6800-3193\nebisu002@bp.iij4u.or.jp\nナンバリング\n様々なナンバリングに柔軟に対応しています。\nナンバリングが必要な製品は企画段階からご相談いただけれ、ベストの方法を提案します。\n番号の種類\n普通番号：095、096、097、098のように1ずつ変化\nスキップ番号：001、006、011や100、200、300と変化\n親子式番号：101-01、101-02　→　101-10、102-01などに変化\n繰り返し番号：01、02、03　→　50、01などに変化\n連続番号：01、01、01、02、02、02、03などに変化\nチェックデジット付き番号：7DR、9DSR、MOD10、MOD11など\n桁数：最大15桁まで各種\n前進＆後進：前進式は1、2、3、4となるもので複写用。後進式は4、3、2、1となるもので単式用\n記号／活字入り番号：番号の頭に活字や記号を付加できます\n加工\nナンバリング（最大Ａ全）\nミシン加工\n筋押し\nスクラッチ加工\n穴あけ\n各種伝票製本\n荷札加工\n各種折加工\n化粧断裁\n番号機の種類と字体見本\n下記画面の右上のアイコンをクリックして、\n別画面を開くとPDFをダウンロードいただけます。\n実寸の字体確認にご利用ください。\n乱数データ作成サービス\nキャンペーン用カードの乱数データを作成\n事例紹介\nキャンペーンで使われる応募コードは連番ではなく、何らかのロジックに基づいた乱数を用いる必要があります。連番では、その体系が見ぬかれて不正利用される可能性があるからです。\n乱数を使うと、通常連番であれば考慮しなければいけない欠番補正が不要になるというメリットもあります。もちろん、同一番号が発生しないよう、重複チェックは厳密に行わねばなりません。\n消費者は、商品に付随するキャンペーンカード（例ではネックハンガー）を入手し、そこに記載されたコードを使い応募をするわけですが、応募コードが隠されていない場合、商品購入前に覗き見されるおそれがあります。通常、応募コードにスクラッチ印刷を施して見えないようにするわけですが、この場合、見えない状態ですから、印刷後の欠番補正や重複チェックは行えません。事前の入念な設計が必要となります。\n当社では、キャンペーンの規模に応じた最適な乱数生成にも対応いたします。\n乱数作成\nと\n乱数販売\n携帯電話用キャンペーンで使われる乱数データの生成と販売を行っています\n＜乱数の生成法＞\n乱数生成のアルゴリズムは信頼性の高いメルセンヌ・ツイスタ\n（\nMersenne twister）を使用しています。\n＜桁数は自由に設定＞\n桁数は自由に設定できます。必要な数量よりも十分に多目に桁数の設定することをお奨めします。\n＜使用できる文字種は自由＞\n数字だけでなく、欧文の\nA\nから\nZ,a\nから\nz\nが使用できます、途中に「\n-\n」を挿入したりスペースを空けたりすることも自由です。\n欧文をお使いになる場合は、読取に紛らわしい０（ゼロ）と\nO(\nオー）、１（イチ）とＩ（アイ）と\ni\n（アイ）と\nl\n（エル）などを含めないパターンをお奨めします。\n桁数毎に文字種を替える事も可能です。\n＜重複のチェック＞\n生成した乱数は重複のチェックを行いご提供しています。前回の乱数との重複チェックも可能です。継続してお使いになる場合は、最初に多めに作成し、必要に応じて切り出して使用する方法をお奨めします。\n乱数のサンプル\n下記画面の右上のアイコンをクリックして、\n別画面を開くとPDFをダウンロードいただけます。\n実寸の字体確認にご利用ください。\nチェックデジットの種類と必要性\n可変QRコード\n可変バーコードに加えて、可変QRコードにも対応しております。\nデータ処理\nデータベースの情報を印刷物に融合させるデータ処理を提供します\n以下のようなニーズにお応えします。\n住所データの整形\nカスタムバーコードデータの作成\n個人情報ファイルと、別ファイルとの関連付け（最寄の支店名など）\n特定データの抽出\nランダムデータの作成\nデータの面付け\n刷り分けデータの作成（Ａパターンで１００部、Ｂパターンで１２０部というようなケース）\nグラフィックフォントの作成（*.bmpファイルのフォント化）\n媒体変換　ＭＴからＭＯなど\n外字作成\n元データは原則テキストデータでご用意下さい\n媒体は、ＭＯ、ＦＤ、ＣＤ－ＲＯＭ、メール\n１レコード毎に改行記号（ＣＲ、ＣＲ＋ＬＦ）\nフィールド毎に区切り記号（カンマ区切り、タブ区切り）\n固定長　（定義書必要）\nマイクロソフト社のエクセル、アクセスのファイル可\nグラフィックは、２４０DPIのモノクロ・ビットマップファイル\n事例のご紹介\nクレジットカード　テイクワン型入会申込書\n活版によるナンバリングではなく、インクジェットによるデジタル方式のナンバリングを採用するきっかけになった事例を紹介します。当時は国内では未だインクジェットによるナンバリングは実用化されていませんでした。\n詳細\nインクジェットによる印字の大型枚葉紙への展開\nスタート当初は\n1\nインチ\n1\nヘッドでの処理であったが、\n1\nインチ×２ヘッドへ、更に\n4\nインチ×２ヘッドへと印字可能な領域は増加した。それに伴い扱える用紙サイズも最大で\nA\n全まで対応可能になり、数字、文字、バーコード、\nQR\nコード、ビットマップの多面付での印字が可能になりました。\n詳細\nどのようにデータ処理の生産性を上げるか？\n扱える印字エリアが広がった事により、多面付も可能になった。それに伴い、データ処理量も格段に増加し、データ処理の生産性を上げる必要に迫られた。顧客にリーズナブルな価格で安全性の高いデータ処理を提供するツールを開発しこうしたニーズに対応できるようになりました。\n詳細\n会社概要\n有限会社 ゑびす堂\n＜所在地＞　　〒116-0001 東京都荒川区町屋8-22-10\n＜事業目的＞　（イ）各種印刷物に対する番号印刷の請負、（口）印刷物一般の請負、（ハ）前各号に付帯する一切の事業\n＜資本金＞　　5,000,000円\n＜創業＞　　　昭和6年7月\n＜法人改組＞　昭和30年7月\n＜役員構成＞　代表取締役：安藤英夫\n＜従業員＞　　5名\n＜取引銀行＞　三井住友銀行神田支店、東京三菱銀行神保町支店、みずほ銀行神田支店\n＜所属団体＞　東京都印刷工業組合、日本印刷技術協会、東京商工会議所、神田法人会\n地図\n個人情報保護方針\n© 2014 Ebisudo Co., Limited All Rights Reserved\nCookie Use\nWe use cookies to ensure a smooth browsing experience. By continuing we assume you accept the use of cookies.\nAccept\nLearn More"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 可変印刷と データ処理",
+      "url": "https://www.ebisudo.co.jp/#_1",
+      "content": "可変印刷と データ処理\n可変印刷と\nデータ処理\nゑびす堂は可変印刷のプロとして、機械系運用技術の開発に加えて、乱数生成やチェック処理等の情報処理技術に日々取り組んでいます。ビッグデータ時代の個別マーケティングに、弊社のノウハウがお役に立ちます。"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 弊社の特徴",
+      "url": "https://www.ebisudo.co.jp/#_2",
+      "content": "弊社の特徴\nナンバリング専業から\n弊社は製本業から昭和\n30\n年に改組してナンバリング専業という珍しい業態の会社としてスタートしています。爾来、ナンバリングは元よりバリアブル印字に至る特化したニーズに応えるサービスを開発・提供し続け今日に至っています。\n現在は、インクジェットによる最大サイズ\nA\n全までへのデータ印字主体となっていますが、創業以来携わるナンバリングにより培われた「\n１\n枚\n１\n枚を管理する」という社風、文化がバリアブル印字にも脈々と受け継がれ、高い品質を維持する原動力になっています。また、ナンバリング及びバリアブル印字が含まれた多くの製品を仕上げた実績から、コンサルティング力を備え「先ずはゑびす堂に聞いてみよう」という評価を頂戴しています。\nソフトウェアの開発力\n弊社では、様々なニーズに応える為に、それまでに市場になかった製造方法、ソフトウエア技術の確立にも積極果敢に取組み、数多くの成果をあげてきました。今では当たり前になった手法、「オフセット印刷機＋ナンバリング」「ビジネスフォーム＋電子ナンバリングによるチェックデジット印字」などの機材の国内\n１\n号機は、弊社にてスタートを切っています。現在の主体のインクジェットによる印字もまだ国内での実績が皆無だった時代からリスクをとりながら取り組み、インクジェットによるデータ印字サービスの流れに深く関わって参りました。\nこうしたカスタマイズしたハードウエアの開発と共に、データ処理の生産性向上、多様性にも尽力して参りました。主に、\nAWK\n、\nPython\n、\nRuby\nなどの汎用言語をベースにバッチ処理を駆使し構築したリーズナブルで迅速な環境は、短納期のオーダー、小ロット多品種といった従来は生産性が上がらなかった製品（店舗数が数百あり、店舗ごとの必要数がバラバラで合計数が\n100\n万枚というような製品）にも柔軟に対処でき、ご好評を頂いております。\n様々な要素技術を常にウオッチし、ナンバリングやバリアブル印字に常に最善のソリューションの提供に努め皆様からのご相談をお待ちしております。"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | お問い合わせ",
+      "url": "https://www.ebisudo.co.jp/#_3",
+      "content": "お問い合わせ\n〒116-0001\n東京都荒川区町屋8-22-10 有限会社 ゑびす堂\n電話：050-5212-8111\nファックス：03-6800-3193\nebisu002@bp.iij4u.or.jp"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | ナンバリング",
+      "url": "https://www.ebisudo.co.jp/#_4",
+      "content": "ナンバリング\n様々なナンバリングに柔軟に対応しています。\nナンバリングが必要な製品は企画段階からご相談いただけれ、ベストの方法を提案します。\n番号の種類\n普通番号：095、096、097、098のように1ずつ変化\nスキップ番号：001、006、011や100、200、300と変化\n親子式番号：101-01、101-02　→　101-10、102-01などに変化\n繰り返し番号：01、02、03　→　50、01などに変化\n連続番号：01、01、01、02、02、02、03などに変化\nチェックデジット付き番号：7DR、9DSR、MOD10、MOD11など\n桁数：最大15桁まで各種\n前進＆後進：前進式は1、2、3、4となるもので複写用。後進式は4、3、2、1となるもので単式用\n記号／活字入り番号：番号の頭に活字や記号を付加できます\n加工\nナンバリング（最大Ａ全）\nミシン加工\n筋押し\nスクラッチ加工\n穴あけ\n各種伝票製本\n荷札加工\n各種折加工\n化粧断裁"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 番号機の種類と字体見本",
+      "url": "https://www.ebisudo.co.jp/#_5",
+      "content": "番号機の種類と字体見本\n下記画面の右上のアイコンをクリックして、\n別画面を開くとPDFをダウンロードいただけます。\n実寸の字体確認にご利用ください。"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 乱数データ作成サービス",
+      "url": "https://www.ebisudo.co.jp/#_6",
+      "content": "乱数データ作成サービス\nキャンペーン用カードの乱数データを作成\n事例紹介\nキャンペーンで使われる応募コードは連番ではなく、何らかのロジックに基づいた乱数を用いる必要があります。連番では、その体系が見ぬかれて不正利用される可能性があるからです。\n乱数を使うと、通常連番であれば考慮しなければいけない欠番補正が不要になるというメリットもあります。もちろん、同一番号が発生しないよう、重複チェックは厳密に行わねばなりません。\n消費者は、商品に付随するキャンペーンカード（例ではネックハンガー）を入手し、そこに記載されたコードを使い応募をするわけですが、応募コードが隠されていない場合、商品購入前に覗き見されるおそれがあります。通常、応募コードにスクラッチ印刷を施して見えないようにするわけですが、この場合、見えない状態ですから、印刷後の欠番補正や重複チェックは行えません。事前の入念な設計が必要となります。\n当社では、キャンペーンの規模に応じた最適な乱数生成にも対応いたします。"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 乱数作成 と 乱数販売",
+      "url": "https://www.ebisudo.co.jp/#_7",
+      "content": "乱数作成 と 乱数販売\n乱数印字\n乱数作成\nと\n乱数販売\n携帯電話用キャンペーンで使われる乱数データの生成と販売を行っています\n＜乱数の生成法＞\n乱数生成のアルゴリズムは信頼性の高いメルセンヌ・ツイスタ\n（\nMersenne twister）を使用しています。\n＜桁数は自由に設定＞\n桁数は自由に設定できます。必要な数量よりも十分に多目に桁数の設定することをお奨めします。\n＜使用できる文字種は自由＞\n数字だけでなく、欧文の\nA\nから\nZ,a\nから\nz\nが使用できます、途中に「\n-\n」を挿入したりスペースを空けたりすることも自由です。\n欧文をお使いになる場合は、読取に紛らわしい０（ゼロ）と\nO(\nオー）、１（イチ）とＩ（アイ）と\ni\n（アイ）と\nl\n（エル）などを含めないパターンをお奨めします。\n桁数毎に文字種を替える事も可能です。\n＜重複のチェック＞\n生成した乱数は重複のチェックを行いご提供しています。前回の乱数との重複チェックも可能です。継続してお使いになる場合は、最初に多めに作成し、必要に応じて切り出して使用する方法をお奨めします。"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 乱数のサンプル",
+      "url": "https://www.ebisudo.co.jp/#_8",
+      "content": "乱数サンプル\n乱数のサンプル\n下記画面の右上のアイコンをクリックして、\n別画面を開くとPDFをダウンロードいただけます。\n実寸の字体確認にご利用ください。"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | チェックデジットの種類と必要性",
+      "url": "https://www.ebisudo.co.jp/#_9",
+      "content": "チェックデジットの種類と必要性"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 可変QRコード",
+      "url": "https://www.ebisudo.co.jp/#_10",
+      "content": "可変ＱＲコード\n可変QRコード\n可変バーコードに加えて、可変QRコードにも対応しております。"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | データ処理",
+      "url": "https://www.ebisudo.co.jp/#_11",
+      "content": "データ処理\nデータベースの情報を印刷物に融合させるデータ処理を提供します\n以下のようなニーズにお応えします。\n住所データの整形\nカスタムバーコードデータの作成\n個人情報ファイルと、別ファイルとの関連付け（最寄の支店名など）\n特定データの抽出\nランダムデータの作成\nデータの面付け\n刷り分けデータの作成（Ａパターンで１００部、Ｂパターンで１２０部というようなケース）\nグラフィックフォントの作成（*.bmpファイルのフォント化）\n媒体変換　ＭＴからＭＯなど\n外字作成\n元データは原則テキストデータでご用意下さい\n媒体は、ＭＯ、ＦＤ、ＣＤ－ＲＯＭ、メール\n１レコード毎に改行記号（ＣＲ、ＣＲ＋ＬＦ）\nフィールド毎に区切り記号（カンマ区切り、タブ区切り）\n固定長　（定義書必要）\nマイクロソフト社のエクセル、アクセスのファイル可\nグラフィックは、２４０DPIのモノクロ・ビットマップファイル"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 事例のご紹介",
+      "url": "https://www.ebisudo.co.jp/#_12",
+      "content": "事例のご紹介\nクレジットカード　テイクワン型入会申込書\n活版によるナンバリングではなく、インクジェットによるデジタル方式のナンバリングを採用するきっかけになった事例を紹介します。当時は国内では未だインクジェットによるナンバリングは実用化されていませんでした。\n詳細\nインクジェットによる印字の大型枚葉紙への展開\nスタート当初は\n1\nインチ\n1\nヘッドでの処理であったが、\n1\nインチ×２ヘッドへ、更に\n4\nインチ×２ヘッドへと印字可能な領域は増加した。それに伴い扱える用紙サイズも最大で\nA\n全まで対応可能になり、数字、文字、バーコード、\nQR\nコード、ビットマップの多面付での印字が可能になりました。\n詳細\nどのようにデータ処理の生産性を上げるか？\n扱える印字エリアが広がった事により、多面付も可能になった。それに伴い、データ処理量も格段に増加し、データ処理の生産性を上げる必要に迫られた。顧客にリーズナブルな価格で安全性の高いデータ処理を提供するツールを開発しこうしたニーズに対応できるようになりました。\n詳細"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 会社概要",
+      "url": "https://www.ebisudo.co.jp/#_13",
+      "content": "会社概要\n有限会社 ゑびす堂\n＜所在地＞　　〒116-0001 東京都荒川区町屋8-22-10\n＜事業目的＞　（イ）各種印刷物に対する番号印刷の請負、（口）印刷物一般の請負、（ハ）前各号に付帯する一切の事業\n＜資本金＞　　5,000,000円\n＜創業＞　　　昭和6年7月\n＜法人改組＞　昭和30年7月\n＜役員構成＞　代表取締役：安藤英夫\n＜従業員＞　　5名\n＜取引銀行＞　三井住友銀行神田支店、東京三菱銀行神保町支店、みずほ銀行神田支店\n＜所属団体＞　東京都印刷工業組合、日本印刷技術協会、東京商工会議所、神田法人会"
+    },
+    {
+      "title": "可変印刷とデータ処理の「ゑびす堂」 | 個人情報保護方針",
+      "url": "https://www.ebisudo.co.jp/#_15",
+      "content": "個人情報保護方針"
+    },
+    {
+      "title": "Cookie Policy - GDPR - 可変印刷とデータ処理の「ゑびす堂」",
+      "url": "https://www.ebisudo.co.jp/pages/cookie-policy",
+      "content": "Cookie Policy\nWhat Are Cookies?\nCookies are small pieces of data (memory files) stored on your computer or device via your browser by sites you visit. As is common practice with almost all websites, this site uses cookies to improve your experience by remembering your preferences and enable other cookie-based features (e.g. analytics), either for a single visit (through a \"session cookie\") or for multiple repeat visits (using a \"persistent cookie\").\nOur Cookies\nWe use cookies for a number of different purposes.\nIf you submit data through a form such as those found on contact pages, comment forms, or blog subscription, cookies may be set to remember your user details for future correspondence.\nIf you submit information through a live chat widget, cookies may be set to remember your user detail so you can continue a conversation the next time you return to the site.\nIf you purchase items via ecommerce, cookies may be set to allow you to add products to your basket, display the correct page for the device you are using, verify your details when you make an order, and allow us to process payment for an order.\nThird-Party Cookies\nIn special cases, we also use cookies provided by trusted third parties like Google Analytics. Third party analytics are used to track and measure usage of this site so that we can continue to produce engaging content.\nManaging Cookies\nWhen you first access the site, you may receive a message advising you that cookies and similar technologies are in use. By clicking \"accept all\", you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy. By clicking \"settings\", you can choose to accept or reject specific cookies.\nYou may withdraw consent at any time. Most browsers allow you to refuse to accept cookies. You can also remove cookies from your browser settings. Be aware that disabling cookies may affect the functionality of this and many other websites you visit. Therefore, it is recommended that you do not disable cookies.\nPlease see the following links for information on how to manage, block, or delete cookies for the most popular browsers:\nMicrosoft Internet Explorer:\nhttps://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies\nGoogle Chrome:\nhttps://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=en\nMozilla Firefox:\nhttps://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences\nApple Safari:\nhttps://support.apple.com/en-gb/guide/safari/sfri11471/mac\nTo find out more on how to manage and delete cookies, visit aboutcookies.org. For more details on your choices regarding use of your web browsing activity for interest-based advertising you may visit the following sites:\nnetworkadvertising.org\noptout.aboutads.info\nyouradchoices.com\nyouronlinechoices.eu\nGeneral\nWe may edit this policy from time to time. Please check this policy regularly for any changes. Our site is hosted on Strikingly Inc. They provide us with the\nweb designer\nthat allows us to\nmake a website free\n.\nCookies are one way we comply with GDPR guidelines. To learn more about Strikingly, the following links may be helpful:\nYoutube\nFacebook\nTwitter\nSXL"
+    }
+  ]
+}
