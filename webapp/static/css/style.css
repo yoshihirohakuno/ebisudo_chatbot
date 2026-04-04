@@ -184,15 +184,16 @@ body {
 }
 
 .message.user > div {
-  width: min(420px, 78%);
+  width: auto;
+  max-width: min(980px, 95%);
 }
 
 .message.user p {
   background: var(--user);
   color: #fff;
   border-top-right-radius: 8px;
-  width: 100%;
-  max-width: none;
+  width: auto;
+  max-width: 100%;
   min-width: 0;
 }
 
@@ -286,11 +287,12 @@ body {
   }
 
   .message.user p {
-    width: 100%;
+    width: auto;
   }
 
   .message.user > div {
-    width: min(360px, 90%);
+    width: auto;
+    max-width: 95%;
   }
 }
 
