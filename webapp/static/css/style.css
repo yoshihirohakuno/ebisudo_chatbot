@@ -99,7 +99,7 @@ body {
 }
 
 .message p {
-  max-width: 85%;
+  max-width: 88%;
   margin: 0;
   padding: 14px 16px;
   border-radius: 18px;
@@ -108,8 +108,10 @@ body {
 }
 
 .message.bot p {
-  background: var(--bot);
-  border-top-left-radius: 8px;
+  max-width: 100%;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .typing-text {
@@ -136,10 +138,9 @@ body {
   align-items: center;
   gap: 8px;
   min-width: 76px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  border-top-left-radius: 8px;
-  background: var(--bot);
+  padding: 6px 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .thinking-dot {
@@ -182,14 +183,21 @@ body {
   justify-content: flex-end;
 }
 
+.message.user > div {
+  width: min(420px, 78%);
+}
+
 .message.user p {
   background: var(--user);
   color: #fff;
   border-top-right-radius: 8px;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
 }
 
 .sources {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 13px;
 }
 
@@ -275,6 +283,14 @@ body {
 
   .chat-form {
     grid-template-columns: 1fr 52px;
+  }
+
+  .message.user p {
+    width: 100%;
+  }
+
+  .message.user > div {
+    width: min(360px, 90%);
   }
 }
 
