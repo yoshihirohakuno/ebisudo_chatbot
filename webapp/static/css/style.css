@@ -48,10 +48,12 @@ body {
 }
 
 .widget-card {
-  height: 100vh;
+  min-height: 100vh;
   border-radius: 0;
   padding: 16px;
   box-shadow: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-header h1 {
@@ -87,8 +89,8 @@ body {
 }
 
 .widget-messages {
-  min-height: calc(100vh - 180px);
-  max-height: calc(100vh - 180px);
+  min-height: calc(100vh - 220px);
+  max-height: calc(100vh - 220px);
 }
 
 .message {
@@ -198,29 +200,31 @@ body {
 
 .chat-form {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 12px;
+  grid-template-columns: 1fr 52px;
+  align-items: end;
+  gap: 10px;
   margin-top: 20px;
 }
 
 .chat-form textarea {
   width: 100%;
-  resize: vertical;
-  min-height: 72px;
+  resize: none;
+  min-height: 56px;
+  max-height: 140px;
   border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 14px 16px;
+  border-radius: 20px;
+  padding: 15px 16px;
   font: inherit;
   color: var(--text);
   background: #fff;
+  overflow-y: auto;
 }
 
 .widget-form textarea {
-  min-height: 56px;
+  min-height: 52px;
 }
 
 .chat-form button {
-  align-self: end;
   border: none;
   border-radius: 999px;
   width: 52px;
@@ -270,10 +274,34 @@ body {
   }
 
   .chat-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 52px;
+  }
+}
+
+@media (max-width: 420px) {
+  .widget-card {
+    padding: 12px 12px 10px;
   }
 
-  .chat-form button {
-    width: 100%;
+  .widget-messages {
+    min-height: calc(100vh - 198px);
+    max-height: calc(100vh - 198px);
+  }
+
+  .widget-form {
+    grid-template-columns: 1fr 48px;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .widget-form textarea {
+    min-height: 48px;
+    padding: 12px 14px;
+  }
+
+  .widget-form button {
+    width: 48px;
+    min-width: 48px;
+    min-height: 48px;
   }
 }

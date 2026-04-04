@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ebisudo Demo Page</title>
+    <style>
+      :root {
+        --bg: #eef6ff;
+        --panel: #ffffff;
+        --line: #d4e5f7;
+        --text: #1d2a39;
+        --muted: #61758a;
+        --brand: #3a7bd5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, #ffffff 0, transparent 32%),
+          linear-gradient(180deg, #f4f9ff 0%, #e8f1fb 100%);
+        font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      }
+
+      .hero {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 72px 24px 120px;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 48px;
+      }
+
+      .logo {
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        color: var(--brand);
+      }
+
+      .links {
+        display: flex;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(58, 123, 213, 0.1);
+        border-radius: 28px;
+        padding: 40px;
+        box-shadow: 0 24px 60px rgba(48, 89, 144, 0.12);
+        backdrop-filter: blur(10px);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--brand);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(36px, 6vw, 64px);
+        line-height: 1.1;
+      }
+
+      p {
+        line-height: 1.9;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 32px;
+      }
+
+      .tile {
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: #f8fbff;
+      }
+
+      .tile strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 840px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="nav">
+        <div class="logo">BLUE SAMPLE INC.</div>
+        <div class="links">
+          <span>Home</span>
+          <span>Service</span>
+          <span>Contact</span>
+        </div>
+      </div>
+
+      <section class="card">
+        <p class="eyebrow">Demo Website</p>
+        <h1>埋め込みチャットの確認用ページ</h1>
+        <p class="lead">
+          これは架空のホームページです。右下に Render 上の Ebisudo FAQ Chat Bot を埋め込んで、
+          外部サイトに設置したときの見え方を確認できます。
+        </p>
+
+        <div class="grid">
+          <div class="tile">
+            <strong>特徴 1</strong>
+            外部サイトのページにチャットボタンを固定表示できます。
+          </div>
+          <div class="tile">
+            <strong>特徴 2</strong>
+            ボタンを押すと右下にチャットウィジェットが開きます。
+          </div>
+          <div class="tile">
+            <strong>特徴 3</strong>
+            既存のページ本文を大きく崩さずに設置できます。
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="http://127.0.0.1:5001/embed.js"
+      data-chatbot-url="http://127.0.0.1:5001"
+    ></script>
+  </body>
+</html>
