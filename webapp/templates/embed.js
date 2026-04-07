@@ -1,31 +1,34 @@
 (function () {
-  function findScriptElement() {
-    if (document.currentScript) {
-      return document.currentScript;
-    }
-
-    var scripts = document.getElementsByTagName("script");
-    for (var index = scripts.length - 1; index >= 0; index -= 1) {
-      var candidate = scripts[index];
-      if (candidate.src && /\/embed\.js(\?.*)?$/.test(candidate.src)) {
-        return candidate;
+  var scriptElement = document.currentScript;
+  if (!scriptElement) {
+    var scriptNodes = document.getElementsByTagName("script");
+    for (var nodeIndex = scriptNodes.length - 1; nodeIndex >= 0; nodeIndex -= 1) {
+      var scriptCandidate = scriptNodes[nodeIndex];
+      if (scriptCandidate.src && /\/embed\.js(\?.*)?$/.test(scriptCandidate.src)) {
+        scriptElement = scriptCandidate;
+        break;
       }
     }
-
-    return null;
   }
+
+  if (!scriptElement || !scriptElement.src) {
+    return;
+  }
+
+  var resolvedBaseUrl =
+    scriptElement.getAttribute("data-chatbot-url") ||
+    scriptElement.dataset.chatbotUrl ||
+    scriptElement.src.replace(/\/embed\.js(\?.*)?$/, "");
 
   function initChatbot() {
     if (document.getElementById("ebisudo-chatbot-root")) {
       return;
     }
 
-    var script = findScriptElement();
-    if (!script || !script.src) {
+    if (!document.body || !document.head) {
+      window.setTimeout(initChatbot, 50);
       return;
     }
-
-    var baseUrl = script.dataset.chatbotUrl || script.src.replace(/\/embed\.js(\?.*)?$/, "");
 
     var root = document.createElement("div");
     root.id = "ebisudo-chatbot-root";
@@ -41,7 +44,7 @@
     frame.loading = "lazy";
     frame.style.display = "none";
     frame.setAttribute("aria-hidden", "true");
-    frame.dataset.src = baseUrl + "/widget";
+    frame.dataset.src = resolvedBaseUrl + "/widget";
 
     var style = document.createElement("style");
     style.textContent = `
